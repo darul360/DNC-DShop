@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.26124.0
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32228.343
 MinimumVisualStudioVersion = 15.0.26124.0
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DNC-DShop.Api", "DNC-DShop.Api", "{EA95EE9B-98D1-47DF-918E-9637F1621CAE}"
 EndProject
@@ -91,6 +91,40 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{DA686EF8-FB6
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DShop.Api.Next", "DNC-DShop.Api.Next\src\DShop.Api.Next\DShop.Api.Next.csproj", "{AD9231EA-BBD1-4C79-832A-32793CEA9B30}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Assets", "Assets", "{AFF4A3EC-623B-41BC-9788-50DC964D4FF1}"
+	ProjectSection(SolutionItems) = preProject
+		assets\devmentors_logo.png = assets\devmentors_logo.png
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Compose", "Compose", "{606B1225-7169-48A0-918F-B0AA702F5ABF}"
+	ProjectSection(SolutionItems) = preProject
+		compose\consul-fabio-vault.yml = compose\consul-fabio-vault.yml
+		compose\docker-compose-local.yml = compose\docker-compose-local.yml
+		compose\docker-compose.yml = compose\docker-compose.yml
+		compose\grafana-influxdb-prometheus.yml = compose\grafana-influxdb-prometheus.yml
+		compose\mongo-rabbit-redis.yml = compose\mongo-rabbit-redis.yml
+		compose\prometheus.yml = compose\prometheus.yml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripts", "Scripts", "{59AFEF1D-0275-4314-BCE6-38C5EB5A075A}"
+	ProjectSection(SolutionItems) = preProject
+		scripts\docker-build-local-all.sh = scripts\docker-build-local-all.sh
+		scripts\docker-build-local-multistage-all.sh = scripts\docker-build-local-multistage-all.sh
+		scripts\dotnet-build-all.sh = scripts\dotnet-build-all.sh
+		scripts\dotnet-build-local-all.sh = scripts\dotnet-build-local-all.sh
+		scripts\dotnet-publish-all.sh = scripts\dotnet-publish-all.sh
+		scripts\dotnet-run-all.sh = scripts\dotnet-run-all.sh
+		scripts\git-clone-all.sh = scripts\git-clone-all.sh
+		scripts\git-pull-all.sh = scripts\git-pull-all.sh
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "demo", "demo", "{E12BEC52-9107-411D-A17E-EB0347D31D79}"
+	ProjectSection(SolutionItems) = preProject
+		compose\demo\infrastructure.yml = compose\demo\infrastructure.yml
+		compose\demo\prometheus.yml = compose\demo\prometheus.yml
+		compose\demo\services.yml = compose\demo\services.yml
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -99,9 +133,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 		Release|x64 = Release|x64
 		Release|x86 = Release|x86
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{4D006400-749D-4662-A219-F697E7462FCF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -309,6 +340,9 @@ Global
 		{AD9231EA-BBD1-4C79-832A-32793CEA9B30}.Release|x86.ActiveCfg = Release|Any CPU
 		{AD9231EA-BBD1-4C79-832A-32793CEA9B30}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{04D57F92-65EE-4F3B-9ACC-2D97E5162157} = {EA95EE9B-98D1-47DF-918E-9637F1621CAE}
 		{4D006400-749D-4662-A219-F697E7462FCF} = {04D57F92-65EE-4F3B-9ACC-2D97E5162157}
@@ -344,5 +378,9 @@ Global
 		{AFA04DA9-3F6F-46D8-9BE4-9135AA0168AF} = {9F474849-C0BE-428B-B0E7-556659665103}
 		{DA686EF8-FB6C-4ECE-8967-3400733F743A} = {379ACE0C-3C20-45DA-8E3A-C15B7995B902}
 		{AD9231EA-BBD1-4C79-832A-32793CEA9B30} = {DA686EF8-FB6C-4ECE-8967-3400733F743A}
+		{E12BEC52-9107-411D-A17E-EB0347D31D79} = {606B1225-7169-48A0-918F-B0AA702F5ABF}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {69DE8E03-1524-4FD7-A084-6D33736A01DA}
 	EndGlobalSection
 EndGlobal
